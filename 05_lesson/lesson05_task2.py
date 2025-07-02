@@ -9,7 +9,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()
 driver.maximize_window()
 driver.get('http://uitestingplayground.com/dynamicid')
 
-for i in range(3):
+for i in range(1):
     driver.find_element(By.CSS_SELECTOR, 'button.btn-primary').click()
 
 sleep(10)

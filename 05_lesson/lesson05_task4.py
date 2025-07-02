@@ -13,5 +13,8 @@ password_input.send_keys('SuperSecretPassword!')
 login_button = driver.find_element(By.CSS_SELECTOR, 'button.radius')
 login_button.click()
 
+success_message = driver.find_element(By.ID, "flash")
+print(success_message.text)
+
 sleep(5)
 driver.quit()

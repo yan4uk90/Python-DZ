@@ -57,7 +57,3 @@ def test_fill_and_submit_form(driver: WebDriver):
     green_highlighted_fields = driver.find_elements
     (By.CSS_SELECTOR, "div.alert.py-2.alert-success")
     assert (green_highlighted_fields)
-
-
-if __name__ == "__main__":
-    pytest.main()

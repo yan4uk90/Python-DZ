@@ -63,6 +63,6 @@ def test_swag_labs():
         browser, "https://www.saucedemo.com/checkout-step-two.html")
     summ = magazine_swag_labs.price()
 
-    assert summ == magazine_swag_labs.price()
+    assert summ == "Total: $58.29"
 
     browser.quit()

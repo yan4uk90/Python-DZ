@@ -36,6 +36,5 @@ def test_calculator(driver):
             (By.CSS_SELECTOR, "div.screen"), "15"))
 
     # Проверка результата
-    result_element = driver.find_element(By.CSS_SELECTOR, "div.screen")
-    result = result_element.text.strip()
+    result = calculator_page.get_result_text()
     assert result == "15"
